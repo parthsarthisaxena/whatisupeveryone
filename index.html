@@ -9,11 +9,17 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link a href="C:\Users\User\Downloads\home-page.svg" rel="stylesheet">
     <meta http-equiv="X-UA-Compatile" content="width-service-width,initia-scales=1.0">
-    <link rel="stylesheet" type="text/css" a href=" button.css ">
+    <link rel="stylesheet" type="text/css" a href="button.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+
 </head>
 
 
 <body>
+    <div class="loader-container">
+        <div class="loader">LOADING</div>
+    </div>
+
     <main>
         <header>
             <h1 class="wow"> We can do everything</h1>
@@ -120,7 +126,11 @@
         <a href=" # " class="123"> Refund Policy</a>
         <a href="# " class="123">Copyright</a>
     </footer>
-
+ <script>
+        $(window).on("load", function() {
+            $(".loader-container").fadeOut(1000);
+        });
+    </script>
 </body>
 
 </html>
